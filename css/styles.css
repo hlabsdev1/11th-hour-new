@@ -1,0 +1,158 @@
+* {
+    --blur-elem: 0px;
+  }
+  
+  .r-h1.is-hero .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#fff, #ffffff14);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  #sailing-bg-h2 .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#fff, #ffffff14);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  .r-h2 .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+  }
+  
+  .r-text-17px.is-hero .char,
+  [underwater-para] .char,
+  .subtitle .char {
+    --blur-elem: 0px;
+  }
+  
+  /*Underwater section */
+  #lighthouse-text.r-h2 .char {
+    --blur-elem: 10px;
+    filter: blur(var(--blur-elem));
+    -webkit-text-fill-color: black;
+    background-image: none;
+    -webkit-background-clip: none;
+    background-clip: none;
+  }
+  
+  .plyr__controls {
+    display: none;
+  }
+  
+  .plyr__poster {
+    background-image: url("https://uploads-ssl.webflow.com/66322408896abef316f2a35a/66c48938f3b9712e1b2a5357_Promo%20video_thumbnail%20(1).jpg") !important;
+    background-size: cover;
+  }
+  
+  .plyr__poster {
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+  }
+  
+  .r-mission-vid-embed:hover .plyr__poster {
+    transform: scale(1.1);
+  }
+  
+  .plyr__control.plyr__control--overlaid {
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    height: 4rem;
+    width: 4rem;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0) !important;
+    position: absolute !important;
+    left: 3rem;
+    top: calc(100% - 3rem);
+    /* backdrop-filter: blur(5px); */
+  }
+  
+  .plyr__control.plyr__control--overlaid:hover {
+    background-color: rgba(255, 255, 255, 100) !important;
+  }
+  
+  .plyr__control.plyr__control--overlaid:hover svg {
+    filter: invert(1);
+  }
+  
+  .r-graph-content {
+    --blur: 4px;
+    filter: blur(var(--blur));
+  }
+  
+  .heading-h1 .char {
+    line-height: 110%;
+  }
+  
+  /*Mission section css here */
+  [m_tl1] .heading-h1 .char,
+  [m_tl1] .r-text-17px .char,
+  [m_tl1] .r-text-13px .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+  }
+  
+  [m_tl4] .heading-h1 .char,
+  [m_tl4] .r-text-17px .char,
+  [m_tl4] .r-text-13px .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+  }
+  
+  [m_tl5] .heading-h1 .char,
+  [m_tl5] .r-text-17px .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+  }
+  
+  [m_tl6] .heading-h1 .char,
+  [m_tl6] .r-text-17px .char {
+    --blur-elem: 0px;
+    filter: blur(var(--blur-elem));
+  }
+  
+  /*side nav pulse */
+  .r-m-line-pin {
+    animation: red-pulse 2s infinite;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+  
+  @keyframes red-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 53, 53, 0);
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(255, 53, 53, 0.33);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 0px rgba(255, 53, 53, 0);
+    }
+  }
+  
+  .r-mission-arrow {
+    animation: moveArrow 1s ease-in alternate infinite;
+    margin-left: 0px;
+  }
+  
+  @keyframes moveArrow {
+    0% {
+      margin-left: 0px;
+    }
+    50% {
+      margin-left: 10px;
+    }
+  }
+  
+  .swiper-wrapper.is--r-image {
+    cursor: url("https://cdn.prod.website-files.com/66322408896abef316f2a35a/66dadd4ac54e9d4aaba657a1_move-horizontal-svgrepo-com%201.svg"),
+      grab;
+  }
