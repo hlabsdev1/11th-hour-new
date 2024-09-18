@@ -21,6 +21,7 @@ $(".popup-img-trigger").click(function () {
   
   const swiperTest = new Swiper(".swiper.is--r-image", {
     slidesPerView: "auto",  //"auto"
+    centeredSlides: true,
     slideToClickedSlide: true,
     spaceBetween: 30,
     navigation: {
