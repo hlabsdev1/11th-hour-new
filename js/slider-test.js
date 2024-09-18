@@ -20,7 +20,7 @@ $(".popup-img-trigger").click(function () {
   //POPUP SLIDER SECTION
   
   const swiperTest = new Swiper(".swiper.is--r-image", {
-    slidesPerView: 1,  //"auto"
+    slidesPerView: "auto",  //"auto"
     slideToClickedSlide: true,
     spaceBetween: 30,
     navigation: {
