@@ -53,6 +53,16 @@ $(".popup-img-trigger").click(function () {
         // updateOuterSlideText(this);
       },
     },
+    breakpoints: {
+      // mobile landscape
+      480: {
+        spaceBetween: 0,
+      },
+      // desktop
+      992: {
+        spaceBetween: 30,
+      },
+    },
   });
   
   // Function to assign attributes to bullets
