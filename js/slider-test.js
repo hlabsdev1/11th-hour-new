@@ -20,10 +20,8 @@ $(".popup-img-trigger").click(function () {
   //POPUP SLIDER SECTION
   
   const swiperTest = new Swiper(".swiper.is--r-image", {
-    slidesPerView: "auto",
+    slidesPerView: 1,  //"auto"
     slideToClickedSlide: true,
-    // slideActiveClass: "is--active",
-    // loop: true,
     navigation: {
       nextEl: ".r-swiper-arrow-wrap .swiper-button-next",
       prevEl: ".r-swiper-arrow-wrap .swiper-button-prev",
