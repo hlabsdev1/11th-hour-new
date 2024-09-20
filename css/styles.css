@@ -156,3 +156,32 @@
     cursor: url("https://cdn.prod.website-files.com/66322408896abef316f2a35a/66dadd4ac54e9d4aaba657a1_move-horizontal-svgrepo-com%201.svg"),
       grab;
   }
+
+  /*Plyr style css */
+  .ytp-title,
+  .ytp-title-enable-channel-logo .ytp-title-channel,
+  .ytp-info-panel-preview,
+  .ytp-chrome-top{
+    display: none ;
+  }
+  .plyr__video-embed iframe {
+    pointer-events: none; 
+ }
+   body.video-playing #r-m-videoImage,
+   body.video-playing #r-m-videoOverlay {
+   	display: none; 
+   }
+   
+   body.video-paused #r-m-videoImage{
+    display: none;
+  }
+   
+   body.video-ended #r-m-videoImage,
+   body.video-ended #r-m-videoOverlay {
+    display: block;
+  }
+  
+  body.video-never-started #r-m-videoImage,
+  body.video-never-started #r-m-videoOverlay {
+  	display: block;
+  }
