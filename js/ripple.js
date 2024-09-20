@@ -395,9 +395,9 @@ $(window).on("unload", function () {
   r_imgtl.to(".r-mission-full-img", { xPercent: -15 });
   
   //horizontal players
-  const players = Array.from(document.querySelectorAll(".plyr__video-embed")).map(
-    (p) => new Plyr(p)
-  );
+  // const players = Array.from(document.querySelectorAll(".plyr__video-embed")).map(
+  //   (p) => new Plyr(p)
+  // );
   
   //Horizontal Promo section
   //Horizontal Promo section
