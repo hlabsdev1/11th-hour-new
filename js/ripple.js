@@ -78,6 +78,9 @@ $(window).on("unload", function () {
     moveContainer = scrollContainer.offsetWidth - window.innerWidth;
     // console.log(moveContainer);
 
+    document.getElementById("r-mission-line-wrap").style.width =
+    missionTotalWidth + "px";
+
     // Refresh ScrollTrigger and invalidate GSAP timeline to use new values
     ScrollTrigger.refresh();
   }
@@ -109,8 +112,8 @@ $(window).on("unload", function () {
     // x: () => -(moveContainer.offsetWidth - window.innerWidth) + 'px',
   });
   
-  document.getElementById("r-mission-line-wrap").style.width =
-    missionTotalWidth + "px";
+  // document.getElementById("r-mission-line-wrap").style.width =
+  //   missionTotalWidth + "px";
   
   gsap.set(".r-mission-line", { width: "0%" });
   
