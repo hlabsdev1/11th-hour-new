@@ -77,6 +77,9 @@ $(window).on("unload", function () {
     //total moveContainer
     moveContainer = scrollContainer.offsetWidth - window.innerWidth;
     // console.log(moveContainer);
+
+    // Refresh ScrollTrigger and invalidate GSAP timeline to use new values
+    ScrollTrigger.refresh();
   }
   
   resizingItems();
@@ -96,6 +99,7 @@ $(window).on("unload", function () {
       end: "bottom bottom",
       scrub: 1,
       // markup: true,
+      invalidateOnRefresh: true,  // This ensures GSAP recalculates on resize
     },
   });
   
@@ -110,20 +114,6 @@ $(window).on("unload", function () {
   
   gsap.set(".r-mission-line", { width: "0%" });
   
-  // // child ANIMATION
-  // // gray section
-  // gsap.to(".r-mission-line", {
-  //   width: "100%",
-  //   ease: "none",
-  //   scrollTrigger: {
-  //     trigger: ".r-mission-item.is--2nd",
-  //     containerAnimation: horzTl,
-  //     start: "left 40%",
-  //     end: "96% right",
-  //     scrub: true,
-  //     markers: true,
-  //   },
-  // });
   
   //media queries
   const rm = window.matchMedia("(min-width: 600px)");
